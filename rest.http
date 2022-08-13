@@ -1,0 +1,57 @@
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "username": "b@gmail.com",
+    "password": "1234"
+}
+###
+
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "username": "a@gmail.com",
+    "password": "1234"
+}
+###
+
+POST http://localhost:3001/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmYyNTA0MjQ2YzZiMDczZjEzZGExZDAiLCJleHAiOjE2NjAwNTg3OTUsImlhdCI6MTY2MDA1NTE5NX0.04mdpIo8rIZnGG1g88S33bnKgUbBzgv2Lu1q9FdgTsM
+
+{
+    "title": "React Js",
+    "description": "Learn react hooks",
+    "url": "",
+    "status": "TO LEARN"
+}
+
+###
+
+GET http://localhost:3001/posts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmYyNTA0MjQ2YzZiMDczZjEzZGExZDAiLCJleHAiOjE2NjAwNTg3OTUsImlhdCI6MTY2MDA1NTE5NX0.04mdpIo8rIZnGG1g88S33bnKgUbBzgv2Lu1q9FdgTsM
+
+###
+
+PUT http://localhost:3001/posts/62f257f5e97410554723af6e
+Content-Type: application/json
+Authorization: Bearer eyJhGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmYyNTA0MjQ2YzZiMDczZjEzZGExZDAiLCJleHAiOjE2NjAwNTg3OTUsImlhdCI6MTY2MDA1NTE5NX0.04mdpIo8rIZnGG1g88S33bnKgUbBzgv2Lu1q9FdgTsM
+
+{
+    "title": "Redux",
+    "description": "Learn react hooks",
+    "url": "",
+    "status": "TO LEARN"
+}
+
+###
+
+DELETE  http://localhost:3001/posts/62f26f68e1c78b3b935a8f5d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmYyNTA0MjQ2YzZiMDczZjEzZGExZDAiLCJleHAiOjE2NjAwNjAwNDEsImlhdCI6MTY2MDA1NjQ0MX0.u5bkXpJ20E2Z3h2S68UPrwOfyV9biX1HskNbPns5m3c
+
+
+###
+
